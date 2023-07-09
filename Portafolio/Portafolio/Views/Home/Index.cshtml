@@ -1,8 +1,14 @@
-﻿@{
+﻿@model string
+
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Soy @ViewBag.Nombre, @Model</h1>
+    <hr />
+    <p>Desarrollador de software</p>
+
+    <img src="~/Imagenes/foto.JPG" alt="foto de Ali" id="foto-perfil" />
 </div>
